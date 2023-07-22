@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "",
 	"browserslist": "> 0.5%, last 2 versions, not dead",
-	"homepage": "https://github.com/Matvii-Alkhimov/games-site-test",
+	"homepage": "https://Matvii-Alkhimov.github.io/games-site-test",
 	"source": "src/index.html",
 	"scripts": {
 		"start": "parcel",
