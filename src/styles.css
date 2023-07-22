@@ -58,6 +58,12 @@ img {
     box-sizing: border-box;
 }
 
+.section > div {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .section.isNotActive {
     display: none;
 }
@@ -834,6 +840,10 @@ img {
 
 .Scientist-section {
     padding: 36px 257px;    
+}
+
+.Scientist-section > div {
+    max-width: 600px;
 }
 
 .scientists-list {
