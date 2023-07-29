@@ -10,6 +10,8 @@ import MarieCurie from '../images_and_icons/images/scientists/Marie_Curie.jpg';
 import MaxPlanck from '../images_and_icons/images/scientists/Max_Planck.jpg';
 import NikolausCopernikus from '../images_and_icons/images/scientists/Nikolaus_Copernikus.jpg';
 import SarahGoode from '../images_and_icons/images/scientists/Sarah_Goode.jpg';
+import scientists from '../arrays/scientists.json';
+console.log(scientists)
 
 const imagesArr = [
   AlbertEinstein, IsaacNewton, GalileoGalilei,
@@ -18,92 +20,93 @@ const imagesArr = [
   SarahGoode, LiseMeitner, HannaHammarström
 ];
 
-const scientists = [ 
-    { 
-        name: "Albert", 
-        surname: "Einstein", 
-        born: 1879, 
-        dead: 1955, 
-        id: 1,
-    }, 
-    { 
-        name: "Isaac", 
-        surname: "Newton", 
-        born: 1643, 
-        dead: 1727, 
-        id: 2,
-    }, 
-    { 
-        name: "Galileo", 
-        surname: "Galilei", 
-        born: 1564, 
-        dead: 1642, 
-        id: 3,
-    }, 
-    { 
-        name: "Marie", 
-        surname: "Curie", 
-        born: 1867, 
-        dead: 1934, 
-        id: 4,
-    }, 
-    { 
-        name: "Johannes", 
-        surname: "Kepler", 
-        born: 1571, 
-        dead: 1630, 
-        id: 5,
-    }, 
-    { 
-        name: "Nikolaus", 
-        surname: "Copernikus", 
-        born: 1473, 
-        dead: 1543, 
-        id: 6,
-    }, 
-    { 
-        name: "Max", 
-        surname: "Planck", 
-        born: 1858, 
-        dead: 1947, 
-        id: 7,
-    }, 
-    { 
-        name: "Katherine", 
-        surname: "Blodgett", 
-        born: 1898, 
-        dead: 1979, 
-        id: 8,
-    }, 
-    { 
-        name: "Ada", 
-        surname: "Lovelace", 
-        born: 1815, 
-        dead: 1852, 
-        id: 9,
-    }, 
-    { 
-        name: "Sarah", 
-        surname: "Goode", 
-        born: 1855, 
-        dead: 1905, 
-        id: 10,
-    }, 
-    { 
-        name: "Lise", 
-        surname: "Meitner", 
-        born: 1878, 
-        dead: 1968, 
-        id: 11,
-    }, 
-    { 
-        name: "Hanna", 
-        surname: "Hammarström", 
-        born: 1829, 
-        dead: 1909, 
-        id: 12,
-    } 
-];
+
+// const scientists = [ 
+//     { 
+//         name: "Albert", 
+//         surname: "Einstein", 
+//         born: 1879, 
+//         dead: 1955, 
+//         id: 1,
+//     }, 
+//     { 
+//         name: "Isaac", 
+//         surname: "Newton", 
+//         born: 1643, 
+//         dead: 1727, 
+//         id: 2,
+//     }, 
+//     { 
+//         name: "Galileo", 
+//         surname: "Galilei", 
+//         born: 1564, 
+//         dead: 1642, 
+//         id: 3,
+//     }, 
+//     { 
+//         name: "Marie", 
+//         surname: "Curie", 
+//         born: 1867, 
+//         dead: 1934, 
+//         id: 4,
+//     }, 
+//     { 
+//         name: "Johannes", 
+//         surname: "Kepler", 
+//         born: 1571, 
+//         dead: 1630, 
+//         id: 5,
+//     }, 
+//     { 
+//         name: "Nikolaus", 
+//         surname: "Copernikus", 
+//         born: 1473, 
+//         dead: 1543, 
+//         id: 6,
+//     }, 
+//     { 
+//         name: "Max", 
+//         surname: "Planck", 
+//         born: 1858, 
+//         dead: 1947, 
+//         id: 7,
+//     }, 
+//     { 
+//         name: "Katherine", 
+//         surname: "Blodgett", 
+//         born: 1898, 
+//         dead: 1979, 
+//         id: 8,
+//     }, 
+//     { 
+//         name: "Ada", 
+//         surname: "Lovelace", 
+//         born: 1815, 
+//         dead: 1852, 
+//         id: 9,
+//     }, 
+//     { 
+//         name: "Sarah", 
+//         surname: "Goode", 
+//         born: 1855, 
+//         dead: 1905, 
+//         id: 10,
+//     }, 
+//     { 
+//         name: "Lise", 
+//         surname: "Meitner", 
+//         born: 1878, 
+//         dead: 1968, 
+//         id: 11,
+//     }, 
+//     { 
+//         name: "Hanna", 
+//         surname: "Hammarström", 
+//         born: 1829, 
+//         dead: 1909, 
+//         id: 12,
+//     } 
+// ];
 
 const elements = {
     scientistContainer: document.querySelector(".Scientist-container"),
@@ -486,7 +489,6 @@ const buttons = [
           const answer = document.createElement("p");
           answer.classList.add("scientist-answer");
           const scientistName = item.dataset.surname;
-          // console.log(scientistName[0])
           const clue = document.createElement("p");
           clue.classList.add("clue-text");
           clueArr.push(clue);
@@ -577,13 +579,9 @@ const buttons = [
           trueList.push(years);
         });
         trueList.sort();
-        console.log(trueList)
         
         const shortestLife = trueList[0];
         const longestLife = trueList[trueList.length - 1];
-
-        console.log(`longestLife: ${longestLife}`);
-        console.log(`shortestLife:${shortestLife}`);
 
         arr.forEach((scientist) => {
           const clue = document.createElement("p");
@@ -702,8 +700,7 @@ function switchCardFunction(event) {
   const btnIndex = elements.buttons.indexOf(event.target);
   event.target.textContent === "Вийти" ? event.target.textContent = "Закрити" : event.target.textContent = "Перевірити";
   taskText.textContent = `Завдання: ${buttons[btnIndex].name} `;
-  elements.scientistsArr.forEach((item) => {
-    const index = elements.scientistsArr.indexOf(item);
+  elements.scientistsArr.forEach((item, index) => {
     const text = Array.from(document.querySelectorAll(`.scientist-text`));
     text.forEach((item) => item.style.display = "none")
     item.style.animationName = "showImages";

@@ -21,8 +21,6 @@ const elements = {
     aiFields: [],
 }
 
-
-
 const games = [
     {
       id: 1,

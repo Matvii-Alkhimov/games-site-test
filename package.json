@@ -20,9 +20,12 @@
 		"url": "https://github.com/Matvii-Alkhimov/games-site-test/issues"
 	},
 	"devDependencies": {
-		"parcel": "^2.9.3"
+		"parcel": "^2.9.3",
+		"parcel-reporter-clean-dist": "^1.0.4"
 	},
 	"dependencies": {
+		"handlebars": "^4.7.7",
+		"parcel-transformer-hbs": "^1.0.4",
 		"validator": "^13.9.0"
 	}
 }
