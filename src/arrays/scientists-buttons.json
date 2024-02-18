@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Які вчені народилися в 19 ст.",
+        "num": 0,
+        "arr": [],
+        "clueArr": [],
+        "rightAnswers": [],
+        "wrongAnswers": [],
+        "didntPickAnswers": [],
+        "type": "find"
+    },
+    {
+        "name": "Відсортувати вчених за алфавітом",
+        "num": 1,
+        "arr": [],
+        "clueArr": [],
+        "rightAnswers": [],
+        "wrongAnswers": [],
+        "didntPickAnswers": [],
+        "type": "sort"
+    },
+    {
+        "name": "Відсортувати вчених за кількістю прожитих років",
+        "num": 2,
+        "arr": [],
+        "clueArr": [],
+        "rightAnswers": [],
+        "wrongAnswers": [],
+        "didntPickAnswers": [],
+        "type": "sort"
+    },
+    {
+        "name": "Знайти вченого, який народився найпізніше",
+        "num": 3,
+        "arr": [],
+        "clueArr": [],
+        "rightAnswers": [],
+        "wrongAnswers": [],
+        "didntPickAnswers": [],
+        "type": "find"
+    },
+    {
+        "name": "Знайти рік народження Albert Einstein",
+        "num": 4,
+        "arr": [],
+        "clueArr": [],
+        "rightAnswers": [],
+        "wrongAnswers": [],
+        "didntPickAnswers": [],
+        "type": "input"
+    },
+    {
+        "name": "Знайти вчених, прізвища яких починаються на літеру 'С'",
+        "num": 5,
+        "arr": [],
+        "clueArr": [],
+        "rightAnswers": [],
+        "wrongAnswers": [],
+        "didntPickAnswers": [],
+        "type": "find"
+    },
+    {
+        "name": "Видалити всіх вчених, ім’я яких починається на 'А'",
+        "num": 6,
+        "arr": [],
+        "clueArr": [],
+        "rightAnswers": [],
+        "wrongAnswers": [],
+        "didntPickAnswers": [],
+        "type": "find"
+    },
+    {
+        "name": "Знайти вчених, який прожив найдовше і вченого, який прожив найменше",
+        "num": 7,
+        "arr": [],
+        "clueArr": [],
+        "rightAnswers": [],
+        "wrongAnswers": [],
+        "didntPickAnswers": [],
+        "type": "find"
+    },
+    {
+        "name": "Знайти вчених, в яких співпадають перші літери імені і прізвища",
+        "num": 8,
+        "arr": [],
+        "clueArr": [],
+        "rightAnswers": [],
+        "wrongAnswers": [],
+        "didntPickAnswers": [],
+        "type": "find"
+    }
+]

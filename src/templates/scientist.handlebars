@@ -1,0 +1,6 @@
+{{#each this}}
+<li data-name="{{this.name}}" data-surname="{{this.surname}}" data-born="{{this.born}}" data-dead="{{this.dead}}" class="scientist-item {{this.name}}_{{this.surname}}">
+    <p class="scientist-text scientist-name">{{this.name}} {{this.surname}}</p>
+    <p class="scientist-text scientist-year">{{this.born}}-{{this.dead}}</p>
+</li>
+{{/each}}
